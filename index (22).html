@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>United Scripts Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+.bg{
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,255,255,.18),transparent 25%),
+radial-gradient(circle at 80% 30%,rgba(0,255,128,.18),transparent 25%),
+radial-gradient(circle at 50% 80%,rgba(0,132,255,.18),transparent 30%);
+}
+
+.header{
+text-align:center;
+padding:60px 20px 30px;
+}
+
+.logo{
+width:140px;
+height:140px;
+margin:auto;
+border-radius:50%;
+background:linear-gradient(135deg,#00e5ff,#00ff88);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:50px;
+font-weight:800;
+color:#000;
+box-shadow:0 0 60px rgba(0,255,255,.7);
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 25px #00e5ff;}
+to{box-shadow:0 0 70px #00ff88;}
+}
+
+.header h1{
+font-size:44px;
+margin-top:18px;
+}
+
+.header p{
+color:#cfcfcf;
+margin-top:8px;
+}
+
+.search-box{
+max-width:650px;
+margin:25px auto;
+padding:0 20px;
+}
+
+.search-box input{
+width:100%;
+padding:16px 20px;
+border:none;
+outline:none;
+border-radius:50px;
+background:rgba(255,255,255,.08);
+color:#fff;
+font-size:16px;
+backdrop-filter:blur(12px);
+}
+
+.apps{
+max-width:1300px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+padding:25px;
+text-align:center;
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px rgba(0,255,255,.35);
+}
+
+.icon{
+width:90px;
+height:90px;
+margin:auto;
+border-radius:22px;
+background:linear-gradient(135deg,#00e5ff,#00ff88);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+color:#000;
+font-weight:800;
+}
+
+.card h2{
+margin-top:15px;
+font-size:22px;
+}
+
+.card p{
+margin-top:10px;
+color:#cfcfcf;
+font-size:13px;
+min-height:45px;
+}
+
+.btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:50px;
+margin-top:18px;
+font-size:15px;
+font-weight:800;
+cursor:pointer;
+background:linear-gradient(135deg,#00e5ff,#00ff88);
+color:#000;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+opacity:.9;
+}
+
+.contact{
+text-align:center;
+padding:45px 20px;
+}
+
+.contact button{
+padding:16px 45px;
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:800;
+cursor:pointer;
+background:linear-gradient(135deg,#00e5ff,#00ff88);
+color:#000;
+}
+
+.footer{
+text-align:center;
+padding:25px;
+color:#888;
+font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="header">
+<div class="logo">US</div>
+<h1>UNITED SCRIPTS HUB</h1>
+<p>All Premium Tools & Apps In One Place</p>
+</div>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search Apps...">
+</div>
+
+<div class="apps">
+
+<div class="card">
+<div class="icon">📧</div>
+<h2>Quotex Gmail</h2>
+<p>Editable Withdrawal Receiver Gmail Tool</p>
+<button class="btn" onclick="openApp('https://adeel-qx-mail.vercel.app/')">OPEN APP</button>
+</div>
+
+<div class="card">
+<div class="icon">🤖</div>
+<h2>Create Bot</h2>
+<p>Create Your Own Quotex Bot Easily</p>
+<button class="btn" onclick="openApp('https://unitedscript.netlify.app/')">OPEN APP</button>
+</div>
+
+<div class="card">
+<div class="icon">💬</div>
+<h2>Telegram Feedback</h2>
+<p>Professional Telegram Feedback Generator</p>
+<button class="btn" onclick="openApp('https://telegram-feedback-by-united-scripts.netlify.app/')">OPEN APP</button>
+</div>
+
+<div class="card">
+<div class="icon">📈</div>
+<h2>Trading Bot</h2>
+<p>Premium Trading Bot Platform</p>
+<button class="btn" onclick="openApp('https://malashya-trading-bot.vercel.app/')">OPEN APP</button>
+</div>
+<div class="card">
+<div class="icon">📈</div>
+<h2>telegram chat maker</h2>
+<p>telgram chat maker for traders only </p>
+<button class="btn" onclick="openApp('https://telegram-chat-maker.netlify.app/')">OPEN APP</button>
+</div>
+</div>
+
+<div class="contact">
+<button onclick="openApp('https://t.me/unitedscript')">
+📩 CONTACT @unitedscript
+</button>
+</div>
+
+<div class="footer">
+© 2026 UNITED SCRIPTS • ALL RIGHTS RESERVED 
+
+
+📞 @uitedscript
+</div>
+
+<script>
+function openApp(url){
+const a = document.createElement('a');
+a.href = url;
+a.target = '_blank';
+a.rel = 'noopener noreferrer';
+document.body.appendChild(a);
+a.click();
+a.remove();
+}
+
+document.getElementById("search").addEventListener("keyup", function(){
+let value = this.value.toLowerCase();
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+let text = card.innerText.toLowerCase();
+card.style.display = text.includes(value) ? "block" : "none";
+});
+});
+</script>
+
+</body>
+</html>
